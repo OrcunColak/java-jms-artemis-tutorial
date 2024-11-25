@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  artemis:
+    image: vromero/activemq-artemis:latest
+    container_name: artemis
+    environment:
+      - ARTEMIS_USERNAME=admin       # Set your Artemis admin username
+      - ARTEMIS_PASSWORD=admin       # Set your Artemis admin password
+    # http://localhost:8161
+    ports:
+      - "61616:61616"                # JMS connection port
+      - "8161:8161"                  # Web console port
+    volumes:
+      - artemis-data:/var/lib/artemis-instance # Persist Artemis data
+
+volumes:
+  artemis-data:
