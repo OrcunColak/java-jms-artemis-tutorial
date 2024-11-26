@@ -10,7 +10,6 @@
 
     <properties>
         <maven.release.source>23</maven.release.source>
-        <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <artemis.version>2.38.0</artemis.version>
