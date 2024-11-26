@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.release.source>23</maven.release.source>
+        <maven.release>23</maven.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <artemis.version>2.38.0</artemis.version>
